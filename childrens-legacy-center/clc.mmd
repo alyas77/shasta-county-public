@@ -1,0 +1,90 @@
+%%{init: {'flowchart': {'defaultRenderer': 'elk', 'curve': 'stepBefore', 'nodeSpacing': 18, 'rankSpacing': 24, 'padding': 10}}}%%
+flowchart TD
+    Dean_Germano["<b>Dean Germano</b><br>CLC Board Chair<br>Shasta CHC · CEO Emeritus<br>McConnell Foundation<br>Partnership HealthPlan<br>CA Future Health Workforce Commission"]
+    Erin_Resner["<b>Erin Resner</b><br>CLC Treasurer · founding board<br>Dutch Bros · co-owner<br>Redding City Council · former Mayor<br>BOS Dist 1 candidate 2026<br>Women's Fund · past Chair<br>CASA · 10+ yrs<br>One SAFE Place"]
+    Stephanie_A_Bridgett["<b>Stephanie A. Bridgett</b><br>CLC Secretary · founding board<br>Shasta County District Attorney"]
+    Mike_Freeman["<b>Mike Freeman</b><br>CLC Board Member<br>SCOE Superintendent"]
+    Kimberly_L_Johnson["<b>Kimberly L. Johnson</b><br>CLC Founder · Executive Director &amp; CEO<br>ARCH Collaborative · CEO<br>One SAFE Place · CEO<br>Extreme Love · past<br>iDignify · past"]
+    Bill_Schueller["<b>Bill Schueller</b><br>CLC Vice-Chair until ~Nov 2023<br>Redding PD Chief · retired"]
+    Judy_Flores["<b>Judy Flores</b><br>CLC Board until ~Apr 2024<br>SCOE Superintendent · retired"]
+    Michael_L_Johnson["<b>Michael L. Johnson</b><br>CLC Board Member · earlier Chair ~2018–2020<br>Shasta County Sheriff"]
+    Jon_Poletski["<b>Jon Poletski</b><br>CLC Board until ~Apr 2024<br>Anderson PD Chief · retired"]
+    Miguel_Rodriguez["<b>Miguel Rodriguez</b><br>CLC Board until ~Oct 2023<br>HHSA · Mental Health / Social Services Branch Director"]
+    Brian_Barner["<b>Brian Barner</b><br>CLC Board until ~Mar 2024<br>Redding PD Chief"]
+    Sarah_Murphy["<b>Sarah Murphy</b><br>CLC Co-Founder<br>Senior Deputy District Attorney · Shasta County"]
+    Mike_DiMatteo["<b>Mike DiMatteo</b><br>CLC Investigator · founding MDT<br>Redding PD Sergeant"]
+    Elizabeth_Harris["<b>Elizabeth Harris</b><br>CLC founding MDT<br>Redding PD Corporal"]
+    Deborah_Heide["<b>Deborah Heide</b><br>CLC founding MDT<br>DA Victim Coordinator · Crime Victims Assistance Center"]
+    Sean_Dugan["<b>Dr. Sean Dugan</b><br>CLC founding MDT<br>Child Abuse Pediatrician · Shasta CHC"]
+    Michelle_Sager["<b>Dr. Michelle Sager, MD</b><br>CLC Child &amp; Adolescent Psychiatrist<br>Mercy Medical Center Redding · Affiliated Psychiatrist<br>Private Practice · Redding"]
+
+subgraph GOV["Government"]
+SCOE[Shasta County Office of Education]
+PD[Redding / Anderson Police]
+BOS[Board of Supervisors · Dist 1]
+SO[Shasta County Sheriff]
+HHSA[Health &amp; Human Services / CPS]
+DA[Shasta County District Attorney]
+RCC[Redding City Council]
+CFHWC[CA Future Health Workforce Commission]
+end
+
+subgraph NGO["NGOs"]
+subgraph CLC["Children's Legacy Center"]
+Shelley_Forbes["<b>Shelley Forbes</b><br>Chief Administrative Officer"]
+Michelle_Robinson["<b>Michelle Robinson</b><br>Chief Fiscal Officer"]
+Elizabeth_Schroeder["<b>Elizabeth Schroeder</b><br>Chief Development Officer"]
+Adrienne_Cushman["<b>Adrienne Cushman</b><br>Chief Program Officer"]
+Vanessa_Banda["<b>Vanessa Banda</b><br>Director · Community Education &amp; Wellness"]
+Sarah_Peery["<b>Sarah Peery</b><br>Chief of Communications"]
+Mary_Williams["<b>Mary Williams</b><br>Director · Regional Initiatives"]
+Fredrick_Boholst["<b>Dr. Fredrick Boholst</b><br>Director · Innovative Research"]
+Jenni_Gordon["<b>Jenni Gordon</b><br>Director · Center for Resilience"]
+Alyson_Kohl["<b>Dr. Alyson Kohl</b><br>Clinical Director"]
+Jana_Thiel["<b>Jana Thiel</b><br>Operations Manager"]
+Victoria_Penton["<b>Victoria Penton</b><br>Response Team Coordinator"]
+end
+ARCH[ARCH Collaborative]
+OSP[One SAFE Place]
+SCHC[Shasta Community Health Center]
+Mercy[Mercy Medical Center Redding]
+end
+
+subgraph PRIV["Private"]
+DB[Dutch Bros]
+Sager_PP[Sager Private Practice · Redding]
+end
+
+Dean_Germano --> CLC & SCHC & CFHWC
+Erin_Resner --> CLC & OSP & DB & BOS & RCC
+Stephanie_A_Bridgett --> CLC & DA
+Mike_Freeman --> CLC & SCOE
+Kimberly_L_Johnson --> CLC & ARCH & OSP
+Bill_Schueller --> CLC & PD
+Judy_Flores --> CLC & SCOE
+Michael_L_Johnson --> CLC & SO
+Jon_Poletski --> CLC & PD
+Miguel_Rodriguez --> CLC & HHSA
+Brian_Barner --> CLC & PD
+Sarah_Murphy --> CLC & DA
+Mike_DiMatteo --> CLC & PD
+Elizabeth_Harris --> CLC & PD
+Deborah_Heide --> CLC & DA
+Sean_Dugan --> CLC & SCHC
+Michelle_Sager --> CLC & Mercy & Sager_PP
+
+ARCH -.-> CLC & OSP
+SCOE & PD & SO & HHSA & DA & SCHC -.->|partner| CLC
+
+classDef p fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+classDef staff fill:#ccfbf1,stroke:#0d9488,color:#134e4a
+classDef gov fill:#dbeafe,stroke:#3b82f6,color:#1e3a8a
+classDef ngo fill:#dcfce7,stroke:#22c55e,color:#14532d
+classDef priv fill:#fef3c7,stroke:#f59e0b,color:#78350f
+classDef c fill:#ede9fe,stroke:#8b5cf6,color:#4c1d95
+class Dean_Germano,Erin_Resner,Stephanie_A_Bridgett,Mike_Freeman,Kimberly_L_Johnson,Bill_Schueller,Judy_Flores,Michael_L_Johnson,Jon_Poletski,Miguel_Rodriguez,Brian_Barner,Sarah_Murphy,Mike_DiMatteo,Elizabeth_Harris,Deborah_Heide,Sean_Dugan,Michelle_Sager p
+class Shelley_Forbes,Michelle_Robinson,Elizabeth_Schroeder,Adrienne_Cushman,Vanessa_Banda,Sarah_Peery,Mary_Williams,Fredrick_Boholst,Jenni_Gordon,Alyson_Kohl,Jana_Thiel,Victoria_Penton staff
+class SCOE,PD,BOS,SO,HHSA,DA,RCC,CFHWC gov
+class ARCH,OSP,SCHC,Mercy ngo
+class DB,Sager_PP priv
+class CLC c
