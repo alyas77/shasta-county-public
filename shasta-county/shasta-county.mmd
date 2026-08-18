@@ -1,0 +1,378 @@
+%%{init: {'flowchart': {'defaultRenderer': 'elk', 'curve': 'stepBefore', 'nodeSpacing': 28, 'rankSpacing': 36, 'padding': 24}}}%%
+flowchart TB
+
+%% ==========================================
+%% STYLES
+%% ==========================================
+    classDef cps fill:#fafafa,stroke:#8c7b6b,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef court fill:#fafafa,stroke:#9a6b6b,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef clc fill:#ffebee,stroke:#c62828,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef bos fill:#fafafa,stroke:#5a6e82,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef city fill:#fafafa,stroke:#5a7a82,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef edu fill:#fafafa,stroke:#6b6582,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef sheriff fill:#fafafa,stroke:#4a5e75,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef bethel fill:#e3f2fd,stroke:#1565c0,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef med fill:#fafafa,stroke:#8a6578,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef law fill:#fafafa,stroke:#5c656e,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef other fill:#fafafa,stroke:#6b6b6b,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+
+    classDef govParent fill:#f1f3f5,stroke:#3d4a57,stroke-width:2.5px,color:#1a1a1a
+    classDef clcParent fill:#fce4ec,stroke:#c62828,stroke-width:2.5px,color:#1a1a1a
+    classDef bethelParent fill:#e3f2fd,stroke:#1565c0,stroke-width:2.5px,color:#1a1a1a
+    classDef cpsParent fill:#f5f2ef,stroke:#6b5540,stroke-width:2.5px,color:#1a1a1a
+    classDef eduParent fill:#f3f2f6,stroke:#4a4560,stroke-width:2px,color:#1a1a1a
+    classDef medParent fill:#f5f2f4,stroke:#6b4058,stroke-width:2px,color:#1a1a1a
+
+%% ==========================================
+%% NODES
+%% ==========================================
+%% CPS
+    Christie_Coleman["<b>Christie Coleman</b><br>HHS Director"]
+    Tara_Shanahan["<b>Tara Shanahan</b><br>SCHHS Deputy Director"]
+    Crystal_Adams["<b>Crystal Adams</b><br>CPS Supervisor"]
+    Kristi_Claycamp["<b>Kristi Claycamp</b><br>CPS Supervisor"]
+    Crystal_Nelson["<b>Crystal Nelson</b><br>Detention Worker"]
+    Jennifer_Szephegui["<b>Jennifer Szephegui</b><br>CPS Worker"]
+    Mandy_Moore["<b>Mandy Moore</b><br>CPS Worker"]
+    Nikki_Quintana["<b>Nikki Quintana</b><br>CPS Worker"]
+    Shannon_Anderson["<b>Shannon Anderson</b><br>PM CPS"]
+    Alicia_Andecott["<b>Alicia Andecott</b><br>CPS Worker"]
+    Richard_Panza["<b>Richard Panza</b><br>CPS CFT Coordinator"]
+    Simranreet_Sahota["<b>Simranreet Sahota</b><br>CPS Scribe"]
+    Sunny_Peyton["<b>Sunny Peyton</b><br>CPS CFTF Scribe"]
+    Viktoriya_Lazurenko["<b>Viktoriya Lazurenko</b><br>Detention Worker"]
+    Jennifer_Kagel["<b>Jennifer Kagel</b><br>FW & SW Aide"]
+    Jeanna_Delgado["<b>Jeanna Delgado</b><br>DV Specialist"]
+    Miguel_Rodrigues["<b>Miguel Rodrigues</b><br>Ex CPS Director"]
+    Joe_Chimenti["<b>Joe Chimenti</b><br>Ex HHS Director"]
+    Lara_Burch["<b>Lara Burch</b><br>Ex HHS Director"]
+    Lindsay_Bloom["<b>Lindsay Bloom</b><br>Nurse Practitioner"]
+    Dana_Monroy["<b>Dana Monroy</b><br>CPS Accomplice"]
+    Cheryl_Anna_Marie["<b>Cheryl Anna Marie</b><br>HHS Worker"]
+    Cindy_Lane["<b>Cindy Lane</b><br>Behavioral Health Director"]
+
+%% Court
+    Molly_Bigelow["<b>Molly Bigelow</b><br>Judge"]
+    Mike_Horan["<b>Mike Horan</b><br>Attorney"]
+    Aneke_Stokes["<b>Aneke Stokes</b><br>Attorney"]
+    Stephanie_Bridgett["<b>Stephanie Bridgett</b><br>Shasta County DA<br>CLC Board Secretary"]
+    Margaret_Long["<b>Margaret Long</b><br>OSP Board President<br>CPS Lawyer"]
+    Michael_Brenn["<b>Michael Brenn</b><br>Lawyer"]
+    Ryan_Hurley["<b>Ryan Hurley</b><br>Lawyer"]
+    Charles_Pullen["<b>Charles Pullen</b><br>Lawyer"]
+    Ben_Ramsey["<b>Ben Ramsey</b><br>Lawyer"]
+    L_W["<b>L W</b><br>Lawyer"]
+    B_M["<b>B M</b><br>Lawyer"]
+    V_B["<b>V.</b><br>Out of state lawyer"]
+    Leesa_Webster["<b>Leesa Webster</b><br>Court Clerk"]
+    Ben_Magid["<b>Ben Magid</b><br>Court Clerk"]
+    Enid_Bruckard["<b>Enid Bruckard</b><br>Court Clerk"]
+    Jessica_Brigmon["<b>Jessica Brigmon</b><br>Court Clerk"]
+    Steve_Carlton["<b>Steve Carlton</b><br>Late Ex SC DA"]
+    Sarah_Murphy["<b>Sarah Murphy</b><br>DA Assistant"]
+
+%% CLC
+    Kimberly_Johnson["<b>Kimberly Johnson</b><br>CEO CLC & One Safe Place"]
+    Dean_Jermano["<b>Dean Jermano</b><br>CLC Chairman"]
+    Michelle_Sager["<b>Michelle Sager</b><br>Former CLC Psychiatrist"]
+    Jenny_Gordon["<b>Jenny Gordon</b><br>CLC Resilience Director"]
+    Adrienne_Cushman["<b>Adrienne Cushman</b><br>Forensic Coordinator"]
+    Shauna_Williams["<b>Shauna Williams</b><br>CLC Social Worker"]
+    Alyson_Kohl["<b>Alyson Kohl</b><br>CLC Director (2023)"]
+    Joel_Dormer["<b>Joel Dormer</b><br>Therapist"]
+    Kim["<b>Kim</b><br>CLC Secretary"]
+
+%% BOS
+    Allen_Long["<b>Allen Long</b><br>Supervisor / Ex Cop"]
+    Kevin_Crye["<b>Kevin Crye</b><br>BOS Supervisor"]
+    Joseph_Larmour["<b>Joseph Larmour</b><br>BOS County Council"]
+    Chris_Kelstrom["<b>Chris Kelstrom</b><br>SC Supervisor"]
+    Corky_Harmon["<b>Corky Harmon</b><br>SC County Supervisor"]
+    David_Rickert["<b>David Rickert</b><br>County Executive Officer"]
+    Patrick_Jones["<b>Patrick Jones</b><br>Ex Supervisor & Mayor"]
+    Matt_Plummer["<b>Matt Plummer</b><br>County Supervisor"]
+    Erin_Resner["<b>Erin Resner</b><br>BOS Supervisor<br>(elected 2026)"]
+
+%% City
+    Paul_Dhanuka["<b>Paul Dhanuka</b><br>Redding City Council"]
+    Mike_Litau["<b>Mike Litau</b><br>Redding Mayor"]
+    Tenessa_Audette["<b>Tenessa Audette</b><br>Redding Councilmember"]
+
+%% Education
+    Judy_Flores["<b>Judy Flores</b><br>SCOE Superintendent<br>CLC Board Member"]
+    Jackie_LaBarbera["<b>Jackie LaBarbera</b><br>AUHSD/SCOE Board Member"]
+    Mike_Freeman["<b>Mike Freeman</b><br>SCOE Superintendent"]
+    Patricia_Dougherty["<b>Patricia Dougherty</b><br>PCA Principal"]
+    Patrick_Keener["<b>Patrick Keener</b><br>PCA President"]
+    Sherry_Keener["<b>Sherry Keener</b><br>PCA Associate"]
+    Cassandra_Mc_Eachen["<b>Cassandra Mc Eachen</b><br>ELA Teacher"]
+    Chris_Rothrock["<b>Chris Rothrock</b><br>Math Teacher"]
+    Priscila_Freitas["<b>Priscila Freitas</b><br>Unofficial Counselor"]
+    Cyntia_Vengley["<b>Cyntia Vengley</b><br>Foster Youth Coordinator"]
+    Clay_Ross["<b>Clay Ross</b><br>Columbia Superintendent"]
+    Deanna_Beck["<b>Deanna Beck</b><br>PE Coordinator"]
+    Sara_Fernandez["<b>Sara Fernandez</b><br>Redding Stem Teacher"]
+    Tiffany_Dorroh["<b>Tiffany Dorroh</b><br>Redding Stem Staff"]
+    Kaylee_Piercy["<b>Kaylee Piercy</b><br>Redding Stem Teacher"]
+    Tom_Vanderpool["<b>Tom Vanderpool</b><br>Redding Stem PE Staff"]
+    Dianne_Cannan["<b>Dianne Cannan</b><br>High School Librarian"]
+    Teresa_Roberts["<b>Teresa Roberts</b><br>SCOE Board Member"]
+    Cindy_Vogt["<b>Cindy Vogt</b><br>Former SCOE Official"]
+    Jessica_French["<b>Jessica French</b><br>SCOE Board Member"]
+    Michael_Orlicky["<b>Michael Orlicky</b><br>SCOE Board Member"]
+
+%% Sheriff
+    Mike_Johnson["<b>Mike Johnson</b><br>Sheriff Coroner<br>Former CLC Board Member"]
+    Tom_Bosenko["<b>Tom Bosenko</b><br>Former Sheriff<br>Co-founder CLC"]
+    Will_Gardner["<b>Will Gardner</b><br>Sheriff's Deputy"]
+    Alexandra_Dahnke["<b>Alexandra Dahnke</b><br>Sheriff's Staff"]
+    Jared_Foster["<b>Jared Foster</b><br>Sheriff's Department"]
+    Jenea_Ashe["<b>Jenea Ashe</b><br>Records Division Staff"]
+
+%% Bethel
+    Bill_Johnson["<b>Bill Johnson</b><br>Bethel Chief Pastor"]
+    Bob_Johnson["<b>Bob Johnson</b><br>Associate"]
+    Kris_Valloton["<b>Kris Vallotton</b><br>Bethel Pastor"]
+    Shawn_Bolz["<b>Shawn Bolz</b><br>Bethel Pastor"]
+    Elizabeth_Woning["<b>Elizabeth Woning</b><br>Bethel Pastor"]
+    Rodger_Gaskin["<b>Rodger Gaskin</b><br>Ex CPS Worker"]
+
+%% Medical
+    Sharon_Babcock["<b>Sharon Babcock</b><br>Mercy Health Staff"]
+    Lea_Tate["<b>Lea Tate</b><br>CPS Paid Psychologist"]
+    Corey_Pearson["<b>Corey Pearson</b><br>BNI Psychologist"]
+    Lori_Bekwith["<b>Lori Bekwith</b><br>Medical Professional"]
+    Arastou_Aminzadeh["<b>Arastou Aminzadeh</b><br>Doctor"]
+    David_Vaknin["<b>David Vaknin</b><br>BNI Financial Coordinator"]
+    Alexandra_Watts["<b>Alexandra Watts</b><br>Midwife"]
+
+%% Lawmakers
+    Heather_Hadwick["<b>Heather Hadwick</b><br>State Assembly"]
+    Brian_Dahle["<b>Brian Dahle</b><br>Politician"]
+    Megan_Dahle["<b>Megan Dahle</b><br>State Senator"]
+    Doug_LaMalfa["<b>Doug LaMalfa</b><br>Late US Congressman"]
+    James_Gallagher["<b>James Gallagher</b><br>Lawmaker"]
+    Darin_Hale["<b>Darin Hale</b><br>Politician"]
+    Sudsan_Hayes["<b>Sudsan Hayes</b><br>Local Politician"]
+    Michelle_Renee_Tyson["<b>Michelle Renee Tyson</b><br>Local Politician"]
+
+%% Moms
+    Authur_Gorman["<b>Authur Gorman</b><br>Activist"]
+    Katie_Gorman["<b>Katie Gorman</b><br>Activist"]
+    Leslie_Sawyer["<b>Leslie Sawyer</b><br>Activist"]
+
+%% Other
+    Michael_Kamfolt["<b>Michael Kamfolt</b><br>Associate of Kevin Crye"]
+    Chriss_Street["<b>Chriss Street</b><br>Power Broker"]
+    Mary_Rickert["<b>Mary Rickert</b><br>Associate"]
+    Walter_Albert["<b>Walter Albert</b><br>Columbia School Board"]
+    Kenefick["<b>Kenefick</b><br>Caretaker"]
+    Maggie["<b>Maggie</b><br>Associate"]
+    Joetta_Fergusson["<b>Joetta Fergusson</b><br>Retired Redding Resident"]
+    Barbara_Gardner["<b>Barbara Gardner</b><br>Associate"]
+    Sheila_Lowe["<b>Sheila Lowe</b><br>Handwriting Specialist"]
+    Jeff_Carr["<b>Jeff Carr</b><br>Anderson Resident"]
+    Bryon_Hadwick["<b>Bryon Hadwick</b><br>Associate"]
+
+
+
+%% ==========================================
+%% SUBGRAPHS
+%% ==========================================
+    subgraph CPS_HHS ["🏢 CPS & HHS"]
+        direction LR
+        Christie_Coleman --> Tara_Shanahan
+        Tara_Shanahan --> Crystal_Adams
+        Tara_Shanahan --> Kristi_Claycamp
+        Crystal_Nelson ~~~ Jennifer_Szephegui ~~~ Mandy_Moore
+        Nikki_Quintana ~~~ Shannon_Anderson ~~~ Alicia_Andecott
+        Richard_Panza ~~~ Simranreet_Sahota ~~~ Sunny_Peyton ~~~ Viktoriya_Lazurenko
+        Jennifer_Kagel ~~~ Jeanna_Delgado ~~~ Miguel_Rodrigues
+        Joe_Chimenti ~~~ Lara_Burch ~~~ Lindsay_Bloom ~~~ Dana_Monroy
+        Cheryl_Anna_Marie ~~~ Cindy_Lane
+    end
+
+    subgraph Government ["🏛️ County Government + Court"]
+        direction TB
+
+        subgraph Court_DA ["⚖️ Court & DA"]
+            direction LR
+            Molly_Bigelow ~~~ Steve_Carlton ~~~ Stephanie_Bridgett ~~~ Margaret_Long
+            Mike_Horan ~~~ Aneke_Stokes ~~~ Ben_Ramsey
+            Michael_Brenn ~~~ Ryan_Hurley ~~~ Charles_Pullen
+            L_W ~~~ B_M ~~~ V_B
+            Leesa_Webster ~~~ Ben_Magid ~~~ Enid_Bruckard ~~~ Jessica_Brigmon
+            Sarah_Murphy
+        end
+
+        subgraph SheriffsDept ["🚓 Sheriff's Department"]
+            direction LR
+            Mike_Johnson ~~~ Tom_Bosenko ~~~ Will_Gardner
+            Alexandra_Dahnke ~~~ Jared_Foster ~~~ Jenea_Ashe
+        end
+
+        subgraph BOS_CountyAdmin ["🏛️ BOS & County Admin"]
+            direction LR
+            Allen_Long ~~~ Kevin_Crye ~~~ Joseph_Larmour ~~~ Chris_Kelstrom
+            Corky_Harmon ~~~ David_Rickert ~~~ Patrick_Jones ~~~ Matt_Plummer ~~~ Erin_Resner
+        end
+
+        subgraph CityCouncil ["🏙️ Redding City Council"]
+            direction LR
+            Paul_Dhanuka ~~~ Mike_Litau ~~~ Tenessa_Audette
+        end
+
+        Court_DA  ~~~ BOS_CountyAdmin
+        SheriffsDept ~~~ Court_DA
+    end
+
+    subgraph CLC ["🤝 Children's Legacy Center"]
+        direction LR
+        Kimberly_Johnson ~~~ Dean_Jermano
+        Michelle_Sager ~~~ Jenny_Gordon ~~~ Adrienne_Cushman
+        Shauna_Williams ~~~ Alyson_Kohl ~~~ Joel_Dormer ~~~ Kim
+    end
+
+    subgraph Bethel ["⛪ Bethel Church"]
+        direction LR
+        Bill_Johnson
+        Bill_Johnson ~~~ Kris_Valloton
+        Bill_Johnson ~~~ Shawn_Bolz
+        Bill_Johnson ~~~ Elizabeth_Woning
+        Rodger_Gaskin ~~~ Bob_Johnson
+    end
+
+    subgraph Education ["🎓 Education & Schools"]
+        direction LR
+        Judy_Flores ~~~ Jackie_LaBarbera ~~~ Mike_Freeman
+        Patricia_Dougherty ~~~ Patrick_Keener ~~~ Sherry_Keener
+        Cassandra_Mc_Eachen ~~~ Chris_Rothrock ~~~ Priscila_Freitas ~~~ Cyntia_Vengley
+        Clay_Ross ~~~ Deanna_Beck
+        Sara_Fernandez ~~~ Tiffany_Dorroh ~~~ Kaylee_Piercy ~~~ Tom_Vanderpool
+        Dianne_Cannan ~~~ Teresa_Roberts ~~~ Cindy_Vogt ~~~ Jessica_French ~~~ Michael_Orlicky
+    end
+
+    subgraph Lawmakers ["📜 Lawmakers & Politicians"]
+        direction LR
+        Heather_Hadwick ~~~ Brian_Dahle ~~~ Megan_Dahle ~~~ Doug_LaMalfa
+        James_Gallagher ~~~ Darin_Hale ~~~ Sudsan_Hayes ~~~ Michelle_Renee_Tyson
+    end
+
+    subgraph MomsForLiberty ["🦅 Moms For Liberty"]
+        direction LR
+        Authur_Gorman ~~~ Katie_Gorman ~~~ Leslie_Sawyer
+    end
+
+    subgraph Other ["👤 Other"]
+        direction LR
+        Michael_Kamfolt ~~~ Chriss_Street ~~~ Mary_Rickert
+        Walter_Albert ~~~ Kenefick ~~~ Maggie
+        Joetta_Fergusson ~~~ Barbara_Gardner ~~~ Sheila_Lowe
+        Jeff_Carr ~~~ Bryon_Hadwick
+    end
+
+    subgraph Medical ["🏥 Medical & Behavioral Health"]
+        direction LR
+        Sharon_Babcock ~~~ Lea_Tate ~~~ Corey_Pearson ~~~ Lori_Bekwith
+        Arastou_Aminzadeh ~~~ David_Vaknin ~~~ Alexandra_Watts
+    end
+
+%% ==========================================
+%% LINKS
+%% ==========================================
+    CLC ~~~ Bethel ~~~ Education
+    Government ~~~ CLC
+    Government ~~~ Medical
+
+    Allen_Long == Family ==> Margaret_Long
+    Will_Gardner == Family ==> Molly_Bigelow
+    Steve_Carlton == Family ==> Molly_Bigelow
+    Bill_Johnson == Family ==> Bob_Johnson
+    Bob_Johnson == Family ==> Kimberly_Johnson
+    Bryon_Hadwick == Family ==> Heather_Hadwick
+    David_Rickert == Family ==> Mary_Rickert
+    Patrick_Keener == Family ==> Sherry_Keener
+    Cyntia_Vengley == Family ==> Walter_Albert
+    Priscila_Freitas == Family ==> Mandy_Moore
+
+    Stephanie_Bridgett -- "Board Secretary" --> CLC
+    Mike_Johnson -- "Former Board Member (until 3/2024)" --> CLC
+    Tom_Bosenko -- "Co-founder" --> CLC
+    Erin_Resner -- "Ex Treasurer" --> CLC
+    Judy_Flores -- "CLC Board Member" --> CLC
+    Cindy_Lane -- "Social Worker" --> CLC
+    Margaret_Long -- "Lawyer" --> CLC
+    Margaret_Long -- "CPS Lawyer" --> CPS_HHS
+    Kimberly_Johnson -- "Ministries" --> Bethel
+    Tenessa_Audette -- "Member" --> Bethel
+    Matt_Plummer -- "Member" --> Bethel
+    Matt_Plummer -- "Advocate" --> CLC
+    Jackie_LaBarbera -- "Aligned" --> MomsForLiberty
+    Cassandra_Mc_Eachen -- "Alleged Tie" --> Bethel
+    Chris_Rothrock -- "Alleged Tie" --> Bethel
+    Rodger_Gaskin -- "Ex Worker" --> CPS_HHS
+    Mike_Johnson --> Will_Gardner
+    Mike_Johnson --> Alexandra_Dahnke
+    Mike_Johnson --> Jared_Foster
+    Mike_Johnson --> Jenea_Ashe
+
+    Kevin_Crye -. Associate .-> Michael_Kamfolt
+    Chriss_Street -. Controls .-> Kevin_Crye
+    Joseph_Larmour -. Has Dirt On .-> Kevin_Crye
+    Chris_Kelstrom -. Associate .-> Kevin_Crye
+    Chris_Kelstrom -. Associate .-> MomsForLiberty
+    Paul_Dhanuka -. Associate .-> Kevin_Crye
+    Paul_Dhanuka -. Employs .-> Sunny_Peyton
+    Tenessa_Audette -. Associate .-> Elizabeth_Woning
+    Patricia_Dougherty -. Crony .-> Walter_Albert
+    Patricia_Dougherty -. Crony .-> Kenefick
+    Chris_Rothrock -. Under Control .-> Patricia_Dougherty
+    Crystal_Nelson -. Knows .-> Jared_Foster
+    Leesa_Webster -. Associate .-> Sheila_Lowe
+    Brian_Dahle -. Endorses .-> Heather_Hadwick
+    Jeff_Carr -. Filed Lawsuit .-> Jackie_LaBarbera
+
+    Sierra_Pacific_Foundation -->|"$1M (2014) + naming rights"| Sierra_Center
+    Sierra_Center --> Kimberly_Johnson
+    Sierra_Pacific_Foundation -->|"Long-standing partnership<br>$100k (2021) + $100k match (2024)"| Arch_Collaborative
+    Arch_Collaborative --> Kimberly_Johnson
+    Arch_Collaborative --> Erin_Resner
+    Arch_Collaborative --> Stephanie_Bridgett
+    Arch_Collaborative --> Dean_Germano
+    Sierra_Pacific_Foundation -->|"$3M catalyst gift"| Dignity_Health_Mercy
+    Sierra_Pacific_Foundation -->|"Community grants"| Mike_Johnson
+    Sierra_Pacific_Foundation -->|"$100k (2021) mental health launch"| Center_for_Resilience
+    Center_for_Resilience --> Kimberly_Johnson
+    Center_for_Resilience --> Jenny_Gordon
+
+%% Bold red for all CLC-related links
+%%    linkStyle 90,102,103,104,105,106,107,108,113 stroke:#c62828,stroke-width:4px
+%% Bold blue for all Bethel-related links
+%%    linkStyle 88,89,110,111,112,115,116,129 stroke:#1565c0,stroke-width:4px
+
+%% ==========================================
+%% APPLY CLASSES
+%% ==========================================
+    class Christie_Coleman,Tara_Shanahan,Crystal_Adams,Kristi_Claycamp,Crystal_Nelson,Jennifer_Szephegui,Mandy_Moore,Nikki_Quintana,Shannon_Anderson,Alicia_Andecott,Richard_Panza,Simranreet_Sahota,Sunny_Peyton,Viktoriya_Lazurenko,Jennifer_Kagel,Jeanna_Delgado,Miguel_Rodrigues,Joe_Chimenti,Lara_Burch,Lindsay_Bloom,Dana_Monroy,Cheryl_Anna_Marie,Cindy_Lane cps
+    class Molly_Bigelow,Mike_Horan,Aneke_Stokes,Michael_Brenn,Ryan_Hurley,Charles_Pullen,Ben_Ramsey,L_W,B_M,V_B,Leesa_Webster,Ben_Magid,Enid_Bruckard,Jessica_Brigmon,Steve_Carlton,Sarah_Murphy,Stephanie_Bridgett,Margaret_Long court
+    class Kimberly_Johnson,Michelle_Sager,Jenny_Gordon,Adrienne_Cushman,Shauna_Williams,Alyson_Kohl,Joel_Dormer,Kim,Dean_Jermano clc
+    class Joseph_Larmour,Kevin_Crye,Allen_Long,Chris_Kelstrom,Corky_Harmon,David_Rickert,Patrick_Jones,Matt_Plummer,Erin_Resner bos
+    class Paul_Dhanuka,Mike_Litau,Tenessa_Audette city
+    class Judy_Flores,Mike_Freeman,Patricia_Dougherty,Patrick_Keener,Sherry_Keener,Clay_Ross,Deanna_Beck,Cassandra_Mc_Eachen,Chris_Rothrock,Priscila_Freitas,Cyntia_Vengley,Sara_Fernandez,Tiffany_Dorroh,Kaylee_Piercy,Tom_Vanderpool,Dianne_Cannan,Teresa_Roberts,Cindy_Vogt,Jessica_French,Michael_Orlicky,Jackie_LaBarbera edu
+    class Mike_Johnson,Tom_Bosenko,Will_Gardner,Alexandra_Dahnke,Jared_Foster,Jenea_Ashe sheriff
+    class Bill_Johnson,Bob_Johnson,Kris_Valloton,Shawn_Bolz,Elizabeth_Woning,Rodger_Gaskin bethel
+    class Sharon_Babcock,Lea_Tate,Corey_Pearson,Lori_Bekwith,Arastou_Aminzadeh,David_Vaknin,Alexandra_Watts med
+    class Heather_Hadwick,Megan_Dahle,Doug_LaMalfa,James_Gallagher,Brian_Dahle,Darin_Hale,Sudsan_Hayes,Michelle_Renee_Tyson law
+    class Authur_Gorman,Katie_Gorman,Leslie_Sawyer other
+    class Michael_Kamfolt,Chriss_Street,Mary_Rickert,Walter_Albert,Kenefick,Maggie,Joetta_Fergusson,Barbara_Gardner,Sheila_Lowe,Jeff_Carr,Bryon_Hadwick other
+
+    class CPS_HHS cpsParent
+    class CLC clcParent
+    class Bethel bethelParent
+    class Government govParent
+    class Education eduParent
+    class Medical medParent
+    class Court_DA court
+    class BOS_CountyAdmin bos
+    class SheriffsDept sheriff
+    class CityCouncil city
