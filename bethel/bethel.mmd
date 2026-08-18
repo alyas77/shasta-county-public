@@ -1,0 +1,65 @@
+%%{init: {'flowchart': {'defaultRenderer': 'elk', 'curve': 'stepBefore', 'nodeSpacing': 32, 'rankSpacing': 40, 'padding': 20}}}%%
+flowchart TB
+
+    classDef bethel fill:#e3f2fd,stroke:#1565c0,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef city fill:#fafafa,stroke:#5a7a82,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef bos fill:#fafafa,stroke:#5a6e82,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef public fill:#fff8e1,stroke:#f9a825,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef court fill:#fafafa,stroke:#9a6b6b,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef bethelParent fill:#e3f2fd,stroke:#1565c0,stroke-width:2.5px,color:#1a1a1a
+    classDef govParent fill:#f1f3f5,stroke:#3d4a57,stroke-width:2px,color:#1a1a1a
+
+    subgraph Bethel ["⛪ Bethel Church"]
+        direction LR
+        Bill_Johnson["<b>Bill Johnson</b><br>Senior Leader"]
+        Kris_Valloton["<b>Kris Vallotton</b><br>Senior Associate Leader<br>Former Advance Redding board president"]
+        Julie_Winter["<b>Julie Winter</b><br>Elder · Former Mayor / Council<br>Former Advance Redding board"]
+        Mike_Winter["<b>Mike Winter</b><br>Elder"]
+        Charlie_Harper["<b>Charlie Harper</b><br>Senior Church Admin<br>Former Advance Redding board"]
+        David_Stine["<b>David Stine</b><br>Former CEO Bethel Media<br>Applied Planning Commission 2024"]
+        Taff_Harvey["<b>Taff Harvey</b><br>Leaders Network / Senior Leadership<br>Applied Planning Commission 2024"]
+        Michael_Van_Tinterin["<b>Michael Van Tinterin</b><br>Pastor<br>Applied Planning Commission 2024"]
+        Elizabeth_Woning["<b>Elizabeth Woning</b><br>Pastor"]
+        Rodger_Gaskin["<b>Rodger Gaskin</b><br>Ex CPS Worker"]
+    end
+
+    Tenessa_Audette["<b>Tenessa Audette</b><br>City Council · BSSM teacher<br>Nominated Bethel leaders to Planning Commission"]
+    Jack_Munns["<b>Jack Munns</b><br>City Council · Bethel-connected"]
+    Matt_Plummer["<b>Matt Plummer</b><br>BOS District 4 · Bethel member"]
+    Erin_Resner["<b>Erin Resner</b><br>Supervisor-elect D1"]
+
+    Planning_Commission["Redding Planning Commission"]
+    Advance_Redding["Advance Redding<br>(City Civic Auditorium)"]
+    CPS_HHS["CPS / HHS"]
+    V_OutOfState["<b>V.</b><br>Out of state lawyer"]
+
+    subgraph City ["🏙️ Redding City"]
+        direction LR
+        Tenessa_Audette ~~~ Jack_Munns
+        Planning_Commission
+        Advance_Redding
+    end
+
+    subgraph County ["🏛️ Shasta County"]
+        direction LR
+        Matt_Plummer ~~~ Erin_Resner
+        CPS_HHS
+    end
+
+%% Minimal cross-group links only
+    Tenessa_Audette -- Member --> Bethel
+    Jack_Munns -- Connected --> Bethel
+    Matt_Plummer -- Member --> Bethel
+    Tenessa_Audette --> Planning_Commission
+    Bethel --> Advance_Redding
+    Rodger_Gaskin -- "Ex Worker" --> CPS_HHS
+    Bethel -. "Allegedly donation" .-> V_OutOfState
+    Tenessa_Audette -. Associate .-> Elizabeth_Woning
+
+    class Bill_Johnson,Kris_Valloton,Julie_Winter,Mike_Winter,Charlie_Harper,David_Stine,Taff_Harvey,Michael_Van_Tinterin,Elizabeth_Woning,Rodger_Gaskin bethel
+    class Tenessa_Audette,Jack_Munns city
+    class Matt_Plummer,Erin_Resner bos
+    class Planning_Commission,Advance_Redding,CPS_HHS public
+    class V_OutOfState court
+    class Bethel bethelParent
+    class City,County govParent
