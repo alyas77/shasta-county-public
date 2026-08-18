@@ -1,65 +1,84 @@
-%%{init: {'flowchart': {'defaultRenderer': 'elk', 'curve': 'stepBefore', 'nodeSpacing': 32, 'rankSpacing': 40, 'padding': 20}}}%%
+%%{init: {'flowchart': {'defaultRenderer': 'elk', 'curve': 'stepBefore', 'nodeSpacing': 28, 'rankSpacing': 36, 'padding': 20}}}%%
 flowchart TB
 
     classDef bethel fill:#e3f2fd,stroke:#1565c0,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
     classDef city fill:#fafafa,stroke:#5a7a82,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
     classDef bos fill:#fafafa,stroke:#5a6e82,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef clc fill:#ffebee,stroke:#c62828,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
     classDef public fill:#fff8e1,stroke:#f9a825,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
     classDef court fill:#fafafa,stroke:#9a6b6b,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef edu fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef business fill:#f3e5f5,stroke:#6a1b9a,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
     classDef bethelParent fill:#e3f2fd,stroke:#1565c0,stroke-width:2.5px,color:#1a1a1a
-    classDef govParent fill:#f1f3f5,stroke:#3d4a57,stroke-width:2px,color:#1a1a1a
+    classDef bosParent fill:#eef2f5,stroke:#5a6e82,stroke-width:2px,color:#1a1a1a
+    classDef cityParent fill:#eef6f7,stroke:#5a7a82,stroke-width:2px,color:#1a1a1a
 
     subgraph Bethel ["⛪ Bethel Church"]
         direction LR
-        Bill_Johnson["<b>Bill Johnson</b><br>Senior Leader"]
-        Kris_Valloton["<b>Kris Vallotton</b><br>Senior Associate Leader<br>Former Advance Redding board president"]
-        Julie_Winter["<b>Julie Winter</b><br>Elder · Former Mayor / Council<br>Former Advance Redding board"]
-        Mike_Winter["<b>Mike Winter</b><br>Elder"]
-        Charlie_Harper["<b>Charlie Harper</b><br>Senior Church Admin<br>Former Advance Redding board"]
-        David_Stine["<b>David Stine</b><br>Former CEO Bethel Media<br>Applied Planning Commission 2024"]
-        Taff_Harvey["<b>Taff Harvey</b><br>Leaders Network / Senior Leadership<br>Applied Planning Commission 2024"]
-        Michael_Van_Tinterin["<b>Michael Van Tinterin</b><br>Pastor<br>Applied Planning Commission 2024"]
-        Elizabeth_Woning["<b>Elizabeth Woning</b><br>Pastor"]
-        Rodger_Gaskin["<b>Rodger Gaskin</b><br>Ex CPS Worker"]
+        Bill_Johnson["<b>Bill Johnson</b><br>Chief Pastor / Senior Leader"]
+        Bob_Johnson["<b>Bob Johnson</b><br>Son of Bill Johnson<br>Ex-husband of Kimberly Johnson"]
+        Kimberly_Johnson["<b>Kimberly Johnson</b><br>Two ministries at Bethel<br>CEO CLC / Arch Collaborative"]
+        Kris_Valloton["<b>Kris Vallotton</b><br>Pastor · Senior Associate Leader"]
+        Shawn_Bolz["<b>Shawn Bolz</b><br>Pastor"]
+        Elizabeth_Woning["<b>Elizabeth Woning</b><br>Pastor · CHANGED Movement co-director"]
+        Rodger_Gaskin["<b>Rodger Gaskin</b><br>Ex CPS worker · now Bethel-affiliated"]
+        Brandon_Showalter["<b>Brandon Showalter</b><br>BSSM Class of 2015<br>Christian Post · CHANGED speaker"]
+        Heather_Armstrong["<b>Heather Armstrong</b><br>Local Women’s Pastor (on leave)<br>PCA Board · Community Member"]
     end
 
-    Tenessa_Audette["<b>Tenessa Audette</b><br>City Council · BSSM teacher<br>Nominated Bethel leaders to Planning Commission"]
-    Jack_Munns["<b>Jack Munns</b><br>City Council · Bethel-connected"]
-    Matt_Plummer["<b>Matt Plummer</b><br>BOS District 4 · Bethel member"]
-    Erin_Resner["<b>Erin Resner</b><br>Supervisor-elect D1"]
+    subgraph BOS ["🏛️ Shasta County Board of Supervisors"]
+        direction LR
+        Kevin_Crye["<b>Kevin Crye</b><br>District 1 · term ends Dec 2026"]
+        Allen_Long["<b>Allen Long</b><br>District 2"]
+        Corkey_Harmon["<b>Corkey Harmon</b><br>District 3 · 2026 Vice-Chair"]
+        Matt_Plummer["<b>Matt Plummer</b><br>District 4 · Bethel member<br>True North advocate<br>Zarvana Founder & CEO"]
+        Chris_Kelstrom["<b>Chris Kelstrom</b><br>District 5 · 2026 Chair"]
+    end
 
-    Planning_Commission["Redding Planning Commission"]
-    Advance_Redding["Advance Redding<br>(City Civic Auditorium)"]
+    subgraph City ["🏙️ Redding City Council"]
+        direction LR
+        Mike_Littau["<b>Mike Littau</b><br>Mayor"]
+        Paul_Dhanuka["<b>Dr. Paul Dhanuka</b><br>Vice Mayor"]
+        Erin_Resner["<b>Erin Resner</b><br>Mayor Pro Tempore<br>Supervisor-elect D1 (Jan 2027)"]
+        Tenessa_Audette["<b>Tenessa Audette</b><br>Councilmember · ex-Mayor<br>Bethel · BSSM God & Government"]
+        Jack_Munns["<b>Jack Munns</b><br>Councilmember<br>Bethel-connected"]
+    end
+
+    CHANGED["CHANGED Movement"]
+    True_North["True North Behavioral Health Campus"]
     CPS_HHS["CPS / HHS"]
     V_OutOfState["<b>V.</b><br>Out of state lawyer"]
+    PCA["PCA<br>Phoenix Charter Academy"]
+    Zarvana["Zarvana LLC<br>Redding · filed Aug 2017<br>Critical-thinking / productivity<br>training & coaching<br>companies · nonprofits · gov"]
 
-    subgraph City ["🏙️ Redding City"]
-        direction LR
-        Tenessa_Audette ~~~ Jack_Munns
-        Planning_Commission
-        Advance_Redding
-    end
-
-    subgraph County ["🏛️ Shasta County"]
-        direction LR
-        Matt_Plummer ~~~ Erin_Resner
-        CPS_HHS
-    end
-
-%% Minimal cross-group links only
+    Bill_Johnson == Family ==> Bob_Johnson
+    Bob_Johnson == Ex-spouse ==> Kimberly_Johnson
     Tenessa_Audette -- Member --> Bethel
-    Jack_Munns -- Connected --> Bethel
     Matt_Plummer -- Member --> Bethel
-    Tenessa_Audette --> Planning_Commission
-    Bethel --> Advance_Redding
+    Jack_Munns -- Connected --> Bethel
+    Kimberly_Johnson -- Ministries --> Bethel
+    Tenessa_Audette -. Associate .-> Elizabeth_Woning
+    Elizabeth_Woning -- Founder --> CHANGED
+    Elizabeth_Woning -- "Pastor (ex)" --> Bethel
+    Brandon_Showalter --> CHANGED
+    Kimberly_Johnson --> True_North
+    Matt_Plummer -- Advocate --> True_North
     Rodger_Gaskin -- "Ex Worker" --> CPS_HHS
     Bethel -. "Allegedly donation" .-> V_OutOfState
-    Tenessa_Audette -. Associate .-> Elizabeth_Woning
+    Kris_Valloton -- "Podcast" --> V_OutOfState
+    Kris_Valloton -- "Cultural Catalysts podcast (2023)" --> Matt_Plummer
+    Heather_Armstrong -- "Local Women’s Pastor (on leave)" --> Bethel
+    Heather_Armstrong -- "Board · Community Member" --> PCA
+    Matt_Plummer -- "Founder / CEO / Manager" --> Zarvana
 
-    class Bill_Johnson,Kris_Valloton,Julie_Winter,Mike_Winter,Charlie_Harper,David_Stine,Taff_Harvey,Michael_Van_Tinterin,Elizabeth_Woning,Rodger_Gaskin bethel
-    class Tenessa_Audette,Jack_Munns city
-    class Matt_Plummer,Erin_Resner bos
-    class Planning_Commission,Advance_Redding,CPS_HHS public
+    class Bill_Johnson,Bob_Johnson,Kris_Valloton,Shawn_Bolz,Elizabeth_Woning,Rodger_Gaskin,Brandon_Showalter,Heather_Armstrong bethel
+    class Kimberly_Johnson clc
+    class Tenessa_Audette,Jack_Munns,Mike_Littau,Paul_Dhanuka,Erin_Resner city
+    class Matt_Plummer,Kevin_Crye,Allen_Long,Corkey_Harmon,Chris_Kelstrom bos
+    class CHANGED,True_North,CPS_HHS public
     class V_OutOfState court
+    class PCA edu
+    class Zarvana business
     class Bethel bethelParent
-    class City,County govParent
+    class BOS bosParent
+    class City cityParent
