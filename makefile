@@ -17,3 +17,8 @@ county:
 bethel:
 	mmdc -i ./bethel/bethel.mmd -o ./bethel/bethel.png -H12000 -w12000 -s1
 	mmdc -i ./bethel/bethel.mmd -o ./bethel/bethel.svg -H24000 -w24000 -s2
+
+# county
+germano:
+	mmdc -i ./Germano/germano.mmd -o ./Germano/germano.png -H12000 -w12000 -s1
+	mmdc -i ./Germano/germano.mmd -o ./Germano/germano.svg -H24000 -w24000 -s2

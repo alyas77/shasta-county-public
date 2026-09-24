@@ -1,0 +1,196 @@
+%%{init: {'flowchart': {'defaultRenderer': 'elk', 'curve': 'stepBefore', 'nodeSpacing': 28, 'rankSpacing': 36, 'padding': 24}}}%%
+flowchart TB
+
+%% ==========================================
+%% STYLES
+%% ==========================================
+    classDef cps fill:#fafafa,stroke:#8c7b6b,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef court fill:#fafafa,stroke:#9a6b6b,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef clc fill:#ffebee,stroke:#c62828,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef bos fill:#fafafa,stroke:#5a6e82,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef edu fill:#fafafa,stroke:#6b6582,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef sheriff fill:#fafafa,stroke:#4a5e75,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef med fill:#fafafa,stroke:#8a6578,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef law fill:#fafafa,stroke:#5c656e,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef org fill:#fff8e7,stroke:#8a7040,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef family fill:#f3f6f0,stroke:#4a6b3a,stroke-width:1.5px,color:#1a1a1a,rx:8,ry:8
+    classDef hub fill:#fff3e0,stroke:#e65100,stroke-width:3px,color:#1a1a1a,rx:10,ry:10
+
+    classDef govParent fill:#f1f3f5,stroke:#3d4a57,stroke-width:2.5px,color:#1a1a1a
+    classDef clcParent fill:#fce4ec,stroke:#c62828,stroke-width:2.5px,color:#1a1a1a
+    classDef medParent fill:#f5f2f4,stroke:#6b4058,stroke-width:2px,color:#1a1a1a
+    classDef famParent fill:#eef3ea,stroke:#3d5a32,stroke-width:2px,color:#1a1a1a
+    classDef philParent fill:#f7f1e4,stroke:#6b5530,stroke-width:2px,color:#1a1a1a
+
+%% ==========================================
+%% HUB
+%% ==========================================
+    Dean_Germano["<b>C. Dean Germano</b><br>CLC Board Chair 2021–<br>SCHC CEO 1992–2024 / Emeritus<br>Partnership HealthPlan Chair 2026–28"]
+
+%% ==========================================
+%% FIRST LEVEL — personal
+%% ==========================================
+    Carol_Germano["<b>Carol Germano</b><br>Wife · retired educator<br>5th-gen Red Bluff ranching family"]
+    Alaina_Germano["<b>Alaina Germano</b><br>Daughter<br>Mercy High, Red Bluff"]
+    Germano_Children["<b>Three grown children</b><br>+ one grandson"]
+
+%% ==========================================
+%% FIRST LEVEL — CLC table (one spoke)
+%% ==========================================
+    Kimberly_Johnson["<b>Kimberly Johnson</b><br>CEO CLC & One Safe Place"]
+    Michelle_Sager["<b>Michelle Sager</b><br>CLC Director of Psychiatry<br>through 2024"]
+    Jenny_Gordon["<b>Jenny Gordon</b><br>CLC Resilience Director"]
+    Alyson_Kohl["<b>Alyson Kohl</b><br>CLC Clinical Director 2023"]
+    Adrienne_Cushman["<b>Adrienne Cushman</b><br>Forensic Coordinator"]
+    Shauna_Williams["<b>Shauna Williams</b><br>CLC Social Worker"]
+    Miguel_Rodriguez["<b>Miguel Rodriguez</b><br>CLC Board through Oct 2023<br>Ex CPS Director"]
+    Bill_Schueller["<b>Bill Schueller</b><br>CLC Vice Chair through Nov 2023<br>Redding Police Chief"]
+    Stephanie_Bridgett["<b>Stephanie Bridgett</b><br>Shasta County DA<br>CLC Board Secretary"]
+    Erin_Resner["<b>Erin Resner</b><br>BOS D1 elect 2026<br>CLC Treasurer / founding board"]
+    Judy_Flores["<b>Judy Flores</b><br>Former SCOE Superintendent<br>CLC Board through 2024"]
+    Mike_Freeman["<b>Mike Freeman</b><br>SCOE Superintendent<br>CLC Board"]
+    Mike_Johnson["<b>Mike Johnson</b><br>Sheriff · CLC Chair 2020<br>Board member through ~2025"]
+    Tom_Bosenko["<b>Tom Bosenko</b><br>Former Sheriff<br>CLC founding photo Apr 2017"]
+    Sarah_Murphy["<b>Sarah Murphy</b><br>Sr. Deputy DA<br>CLC founding MDT 2017"]
+    Cindy_Lane["<b>Cindy Lane</b><br>Children's Services / BH<br>CLC founding MDT 2017"]
+    Dianna_Wagner["<b>Dianna Wagner</b><br>Children's Services Director<br>CLC founding photo Apr 2017"]
+    Eric_Magrini["<b>Eric Magrini</b><br>Ex Sheriff / Asst CEO<br>CLC Board 2020"]
+    Megan_Dahle["<b>Megan Dahle</b><br>State Senator<br>CLC-associated"]
+
+%% ==========================================
+%% FIRST LEVEL — SCHC
+%% ==========================================
+    SCHC["<b>Shasta Community Health Center</b><br>FQHC · CEO 1992–Mar 2024"]
+    Brandon_Thornock["<b>Brandon Thornock</b><br>SCHC CEO Mar 2024–<br>COO under Germano 10 yrs"]
+    Sean_Dugan["<b>Sean Dugan</b><br>SCHC pediatrician 2012–24<br>CLC forensic examiner 2017–24"]
+    Center_of_Hope["<b>The Center of Hope</b><br>SCHC leasehold affiliate<br>Germano officer on 990"]
+    Supportive_Housing["<b>Shasta Supportive Housing</b><br>Related 990 entity<br>Germano officer"]
+    WBC_Center["<b>C. Dean Germano Women's,<br>Babies' & Children's Center</b><br>dedicated Mar 2024"]
+
+%% ==========================================
+%% FIRST LEVEL — government / payer / trade
+%% ==========================================
+    Partnership["<b>Partnership HealthPlan</b><br>Medi-Cal managed care<br>Shasta seat · Chair Feb 2026–28"]
+    PHAB["<b>Shasta Public Health<br>Advisory Board</b><br>Germano past Chair"]
+    CPCA["<b>California Primary Care Assn</b><br>Past President / Emeritus"]
+    Workforce_Comm["<b>CA Future Healthcare<br>Workforce Commission</b>"]
+    HANC["<b>Health Alliance of N. CA</b><br>Past Chair / member"]
+
+%% ==========================================
+%% FIRST LEVEL — philanthropy
+%% ==========================================
+    McConnell["<b>The McConnell Foundation</b><br>Board Director Mar 2024–"]
+    CalEndow["<b>The California Endowment</b><br>Board ~10 yrs / Emeritus"]
+    CHCF["<b>CA Health Care Foundation</b><br>Post-retirement role 2024–"]
+    Golden_Umbrella["<b>Golden Umbrella / Senior Nutrition</b><br>Dignity affiliate · past Chair"]
+
+%% ==========================================
+%% VERY STRONG SECOND LEVEL
+%% ==========================================
+    Arch_Collaborative["<b>Arch Collaborative</b><br>Sierra Pacific partnership<br>sits Germano · Bridgett · Resner"]
+    Sierra_Pacific_Foundation["<b>Sierra Pacific Foundation</b>"]
+    Center_for_Resilience["<b>Center for Resilience</b><br>CLC program<br>$100k SPF launch"]
+    Dignity_Health_Mercy["<b>Dignity Health / Mercy</b><br>SART / forensic partner"]
+
+%% ==========================================
+%% SUBGRAPHS
+%% ==========================================
+    subgraph Family ["👨‍👩‍👧 Family — first level"]
+        direction LR
+        Carol_Germano ~~~ Alaina_Germano ~~~ Germano_Children
+    end
+
+    subgraph SCHC_Med ["🏥 SCHC — first level"]
+        direction LR
+        SCHC ~~~ WBC_Center ~~~ Center_of_Hope ~~~ Supportive_Housing
+        Brandon_Thornock ~~~ Sean_Dugan
+    end
+
+    subgraph CLC ["🤝 Children's Legacy Center — first level"]
+        direction LR
+        Kimberly_Johnson ~~~ Michelle_Sager ~~~ Jenny_Gordon
+        Alyson_Kohl ~~~ Adrienne_Cushman ~~~ Shauna_Williams
+        Bill_Schueller ~~~ Miguel_Rodriguez
+        Stephanie_Bridgett ~~~ Erin_Resner ~~~ Sarah_Murphy
+        Judy_Flores ~~~ Mike_Freeman
+        Mike_Johnson ~~~ Tom_Bosenko ~~~ Eric_Magrini
+        Cindy_Lane ~~~ Dianna_Wagner ~~~ Megan_Dahle
+    end
+
+    subgraph GovPayer ["🏛️ County / state seats — first level"]
+        direction LR
+        Partnership ~~~ PHAB ~~~ CPCA
+        Workforce_Comm ~~~ HANC
+    end
+
+    subgraph Philanthropy ["💰 Foundations — first level + grant hop"]
+        direction LR
+        McConnell ~~~ CalEndow ~~~ CHCF ~~~ Golden_Umbrella
+        Sierra_Pacific_Foundation ~~~ Arch_Collaborative ~~~ Center_for_Resilience
+        Dignity_Health_Mercy
+    end
+
+%% ==========================================
+%% FIRST-LEVEL LINKS FROM GERMANO
+%% ==========================================
+    Dean_Germano -- "Spouse" --> Carol_Germano
+    Carol_Germano -- "Parent" --> Alaina_Germano
+    Dean_Germano -- "Parent" --> Germano_Children
+    Carol_Germano -- "Parent" --> Germano_Children
+
+    Dean_Germano -- "CEO 1992–Mar 2024 / Emeritus" --> SCHC
+    SCHC --> WBC_Center
+    SCHC --> Center_of_Hope
+    SCHC --> Supportive_Housing
+    Dean_Germano -- "Building dedicated Mar 2024" --> WBC_Center
+    Dean_Germano -- "COO 10 yrs → CEO 2024" --> Brandon_Thornock
+    Dean_Germano -- "Employed 2012–Mar 2024" --> Sean_Dugan
+
+    Dean_Germano -- "CLC Board 2017– · Vice Chair 2020 · Chair 2021–" --> CLC
+
+    Dean_Germano -- "Chair Feb 2026–28" --> Partnership
+    Dean_Germano -- "Past Chair" --> PHAB
+    Dean_Germano -- "Past President / Emeritus" --> CPCA
+    Dean_Germano -- "Commissioner" --> Workforce_Comm
+    Dean_Germano -- "Past Chair" --> HANC
+
+    Dean_Germano -- "Board Mar 2024–" --> McConnell
+    Dean_Germano -- "Board ~decade / Emeritus" --> CalEndow
+    Dean_Germano -- "Role 2024–" --> CHCF
+    Dean_Germano -- "Past Advisory Chair" --> Golden_Umbrella
+
+%% ==========================================
+%% VERY STRONG SECOND-LEVEL LINKS
+%% ==========================================
+    Sean_Dugan -- "Forensic exams 2017–Mar 2024" --> Kimberly_Johnson
+    Dignity_Health_Mercy -- "SART partner" --> Sean_Dugan
+    Partnership -- "Medi-Cal payer" --> SCHC
+    Arch_Collaborative --> Dean_Germano
+    Arch_Collaborative --> Kimberly_Johnson
+    Arch_Collaborative --> Erin_Resner
+    Arch_Collaborative --> Stephanie_Bridgett
+    Sierra_Pacific_Foundation -->|"partnership + match grants"| Arch_Collaborative
+    Sierra_Pacific_Foundation -->|"$100k 2021 MH launch"| Center_for_Resilience
+    Center_for_Resilience --> Kimberly_Johnson
+    Center_for_Resilience --> Jenny_Gordon
+
+%% ==========================================
+%% APPLY CLASSES
+%% ==========================================
+    class Dean_Germano hub
+    class Carol_Germano,Alaina_Germano,Germano_Children family
+    class Kimberly_Johnson,Michelle_Sager,Jenny_Gordon,Alyson_Kohl,Adrienne_Cushman,Shauna_Williams,Miguel_Rodriguez,Bill_Schueller clc
+    class Stephanie_Bridgett,Sarah_Murphy court
+    class Erin_Resner bos
+    class Judy_Flores,Mike_Freeman edu
+    class Mike_Johnson,Tom_Bosenko,Eric_Magrini,Bill_Schueller sheriff
+    class SCHC,Brandon_Thornock,Sean_Dugan,Center_of_Hope,Supportive_Housing,WBC_Center med
+    class Cindy_Lane,Dianna_Wagner,Miguel_Rodriguez cps
+    class Megan_Dahle law
+    class Partnership,PHAB,CPCA,Workforce_Comm,HANC,McConnell,CalEndow,CHCF,Golden_Umbrella,Sierra_Pacific_Foundation,Arch_Collaborative,Center_for_Resilience,Dignity_Health_Mercy org
+
+    class Family famParent
+    class CLC clcParent
+    class SCHC_Med medParent
+    class GovPayer govParent
+    class Philanthropy philParent
