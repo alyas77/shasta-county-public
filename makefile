@@ -34,3 +34,9 @@ partnership:
 case:
 	mmdc -i ./case-sequence/case-sequence.mmd -o ./case-sequence/case-sequence.png -H12000 -w12000 -s1
 	mmdc -i ./case-sequence/case-sequence.mmd -o ./case-sequence/case-sequence.svg -H24000 -w24000 -s2
+
+
+fraud:
+	mmdc -i ./corrupt-fraud-map/corrupt-fraud-map.mmd -o ./corrupt-fraud-map/corrupt-fraud-map.png -H12000 -w12000 -s1
+	mmdc -i ./corrupt-fraud-map/corrupt-fraud-map.mmd -o ./corrupt-fraud-map/corrupt-fraud-map.svg -H24000 -w24000 -s2
+
