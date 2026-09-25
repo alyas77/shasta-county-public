@@ -1,0 +1,40 @@
+flowchart LR
+    subgraph ASK["1. Who generates the patient"]
+        CPS["HHSA Children's Services<br/>Lane / Rodriguez / Coleman"]
+        CT["Bigelow courtroom<br/>jurisdiction · placement · JV-223"]
+        MDT["CLC MDT / SART<br/>DA Bridgett · cops · CPS · Dugan exam"]
+        CPS --> CT
+        CPS --> MDT
+        MDT --> CT
+    end
+
+    subgraph TREAT["2. Who delivers"]
+        SCHC2["SCHC — peds / BH / gender line / HOPE"]
+        CLC2["CLC — forensic + Center for Resilience / Sager"]
+        PP2["PP Redding — Family PACT / minor-consent / GAC"]
+        MERCY2["Mercy + Shasta Regional"]
+        MDT --> SCHC2
+        MDT --> CLC2
+        CT -->|"JV-220(A) physician<br/>JV-223 judge"| SCHC2
+        CT --> CLC2
+        CT -->|"WIC 369h + Fam 6925<br/>no parent required"| PP2
+        SCHC2 --> MERCY2
+    end
+
+    subgraph PAY["3. Who finances"]
+        PHC2["Partnership<br/>Chair: Germano<br/>Seats: Jones + Coleman"]
+        HRSA["HRSA 330 / 340B / PPS"]
+        CDSS["CDSS CAC / pilot / county contracts"]
+        PHC2 -->|"encounters · QIP · family-planning bypass"| SCHC2
+        PHC2 --> CLC2
+        PHC2 --> PP2
+        PHC2 --> MERCY2
+        HRSA --> SCHC2
+        CDSS --> CLC2
+    end
+
+    GER["Dean Germano"] -.->|"chairs payer + chairs CAC + built FQHC"| PHC2
+    GER -.-> CLC2
+    GER -.-> SCHC2
+    COLE["Christy Coleman"] -.->|"runs HHSA + sits on payer"| CPS
+    COLE -.-> PHC2
